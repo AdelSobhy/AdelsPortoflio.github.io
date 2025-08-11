@@ -1,143 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Adel Sobhy Portfolio</title>
+    <title>Adel Sobhy - Data Scientist Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
-
 <body>
-    <header>
-        <nav>
-            <h1 class="logo">Adel Sobhy</h1>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <!-- Navigation -->
+    <header class="navbar">
+        <nav class="nav-container">
+            <div class="logo">
+                <h1>Adel Sobhy</h1>
+                <span class="logo-subtitle">Data Scientist</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
+
+    <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content">
-            <h2 class="title">Adel Sobhy</h2>
-            <h3 class="subtitle">Content-Creator | Competitive Programmer | Machine Learning Engineer | Data Scientist</h3>
-            <p class="description">I’m a Tech Content Creator, Competitive Programmer, and junior Machine Learning Engineer and Data Scientist with a passion for solving real-world problems through data and AI.</p>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Adel Ahmed Sobhy</span>
+                </h1>
+                <h2 class="hero-subtitle">Junior Data Scientist & Competitive Programmer</h2>
+                <p class="hero-description">
+                    Results-driven data scientist with expertise in machine learning, deep learning, and statistical modeling. 
+                    Passionate about transforming complex data into actionable insights and building intelligent systems 
+                    that drive meaningful impact.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-secondary">View My Work</a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">1</span>
+                    <span class="stat-label">Proof Of Concept</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">Top 40% Solution</span>
+                    <span class="stat-label">Kaggle Ranking</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">3.82</span>
+                    <span class="stat-label">GPA</span>
+                </div>
+            </div>
         </div>
     </section>
-    <section id="links" class="links-section">
-        <h2>Connect with Me</h2>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/adel-sobhy-4b97a12aa/" target="_blank" class="social-link">
-                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" />
-            </a>
-            <a href="https://www.youtube.com/@Programming_in_Arabic" target="_blank" class="social-link">
-                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" />
-            </a>
-            <a href="https://github.com/AdelSobhy" target="_blank" class="social-link">
-                <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" />
-            </a>
+
+    <!-- Social Links -->
+    <section class="social-section">
+        <div class="container">
+            <h2>Connect With Me</h2>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/adel-sobhy-4b97a12aa/" target="_blank" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.kaggle.com/adelsobhyy" target="_blank" class="social-link" aria-label="Kaggle">
+                    <i class="fab fa-kaggle"></i>
+                </a>
+                <a href="https://github.com/AdelSobhy" target="_blank" class="social-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.youtube.com/@Programming_in_Arabic" target="_blank" class="social-link" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
         </div>
     </section>
-    <section id="contact" class="contact-section">
-        <h2>Contact Me</h2>
-        <p>If you'd like to get in touch, feel free to email me at:</p>
-        <a href="mailto:adelsobhywork@gmail.com" class="email-link">adelsobhywork@gmail.com</a>
-    </section>
+
+    <!-- About Section -->
     <section id="about" class="about-section">
-        <h2>About Me</h2>
-        <p>I am a dedicated Tech Content Creator and aspiring Data Scientist with a strong foundation in Machine Learning and Artificial Intelligence. Currently pursuing a degree in Computer Science, I maintain a high GPA while actively engaging in competitive programming and real-world data projects.
-
-            My passion lies in demystifying complex concepts in programming and machine learning, making them accessible to a broader audience. Through my educational content, I strive to empower others to thrive in the tech landscape.
-            
-            With hands-on experience in various data science techniques, I am committed to leveraging data to solve impactful problems. My expertise includes developing predictive models, performing statistical analyses, and creating visualizations that turn data into actionable insights.
-            
-            Driven by curiosity and a desire to innovate, I am eager to contribute to projects that push the boundaries of what is possible with data.</p>
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p class="about-text">
+                    I'm passionate about solving complex problems using data science and artificial intelligence. 
+                    My expertise spans machine learning algorithms, deep learning, natural language processing, 
+                    and computer vision. With hands-on experience in statistical modeling, feature engineering, 
+                    and predictive systems, I thrive in collaborative environments and enjoy mentoring others 
+                    in the field of data science and competitive programming.
+                </p>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-brain"></i>
+                        <h4>Machine Learning Expert</h4>
+                        <p>Advanced knowledge in ML algorithms and model optimization</p>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>Data Analysis</h4>
+                        <p>Expert in EDA, statistical modeling, and data visualization</p>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-code"></i>
+                        <h4>Programming</h4>
+                        <p>Proficient in Python, SQL, and competitive programming</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <div id="particles-js"></div>
+
+    <!-- Skills Section -->
     <section id="skills" class="skills-section">
-        <h2>Skills</h2>
-        <ul class="skills-list">
-            <li>TensorFlow</li>
-            <li>Statistical Analysis</li>
-            <li>Pandas</li>
-            <li>Numpy</li>
-            <li>Matplotlib</li>
-            <li>Python</li>
-            <li>C++</li>
-            <li>Scikit-Learn</li>
-            <li>NLP</li>
-            <li>Prediction Systems</li>
-            <li>Visualization</li>
-            <li>Deep-Learning</li>
-        </ul>
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">C++</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Machine Learning</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">Keras</span>
+                        <span class="skill-tag">LightGBM</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Data Analysis</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">Seaborn</span>
+                        <span class="skill-tag">Plotly</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Jupyter Notebook</span>
+                        <span class="skill-tag">Google Colab</span>
+                        <span class="skill-tag">Tableau</span>
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">AWS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <!-- Experience Section -->
     <section id="experience" class="experience-section">
-        <h2>Experience</h2>
-    
-        <div class="experience-card">
-            <h3>Machine Learning Intern</h3>
-            <h4>Uneeq Interns</h4>
-            <p>As a Machine Learning Intern at Uneeq Interns, I developed, tested, and optimized ML models for real-world applications. I gained hands-on experience with data preprocessing, model building, and deploying scalable AI solutions, all while collaborating with a team of skilled professionals to push innovative projects forward.</p>
-        </div>
-    
-        <div class="experience-card">
-            <h3>Teacher Assistant</h3>
-            <h4>IGCSE Computer Science</h4>
-            <p>Assisted in teaching IGCSE Computer Science, helping students grasp complex programming concepts, algorithms, and data structures. Provided mentorship and guidance, enhancing their problem-solving skills and ensuring their readiness for exams.</p>
-        </div>
-    
-        <div class="experience-card">
-            <h3>ECPC Participant</h3>
-            <h4>Egyptian Collegiate Programming Contest</h4>
-            <p>Contributed to the ECPC (Egyptian Collegiate Programming Contest), competing against top programmers to solve challenging algorithmic problems. Strengthened my competitive programming skills, refined problem-solving strategies, and collaborated with a team to tackle complex challenges under pressure.</p>
-        </div>
-    </section>
-    
-    <section id="video" class="video-section">
-        <h2>YouTube Channel</h2>
-        <div class="video-container">
-            <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/qiZhMl2dfh4"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Data Scientist Intern</h3>
+                        <h4>Collectivae | Jan 2025 – Apr 2025</h4>
+                        <p>Engineered a minority-aware voting algorithm ensuring proportional representation and fairness, reducing bias by 90% in test scenarios. Delivered a Proof of Concept in under 14 days and presented to AUC Tahrir researchers.</p>
+                        <ul class="achievement-list">
+                            <li>Designed competitive ranking framework using DAG models and Elo rating systems</li>
+                            <li>Streamlined voting processes by integrating multiple ranking algorithms</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Machine Learning Intern</h3>
+                        <h4>Uneeq Interns | Sep 2024 – Oct 2024</h4>
+                        <p>Predicted customer churn using advanced feature engineering and model evaluation techniques. Recognized handwritten digits using CNNs for computer vision tasks.</p>
+                        <ul class="achievement-list">
+                            <li>Gained practical experience in deep learning optimization</li>
+                            <li>Developed model deployment readiness strategies</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Technical Mentor</h3>
+                        <h4>CPC MSA | Oct 2024 – Present</h4>
+                        <p>Taught data structures, recursion, and trees, breaking complex concepts into manageable steps. Guided students in algorithmic problem-solving and competitive programming.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>NASA Space Apps Hackathon Contestant</h3>
+                        <h4>Sep 2024</h4>
+                        <p>Processed and analyzed NASA Greenhouse Gas Center data to identify CO₂ emission trends. Built and deployed a binary logistic regression model with 87% accuracy.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects" class="projects-section">
-        <h2>Projects</h2>
-        <div class="project-card">
-            <h3>Customer Churn Prediction</h3>
-            <p><a href="https://github.com/AdelSobhy/Uneeq-ML/blob/main/Customer_Churn_Prediction_.ipynb" target="_blank">View</a></p>
-        </div>
-        <div class="project-card">
-            <h3>Heart Disease Diagnosis System</h3>
-            <p><a href="https://github.com/AdelSobhy/Uneeq-ML/blob/main/Uneeq_Task2_Healthcare_Diagnosis.ipynb" target="_blank">View</a></p>
-        </div>
-        <div class="project-card">
-            <h3> NLP Sentiment Analysis On Social Media Data</h3>
-            <p><a href="https://github.com/AdelSobhy/Uneeq-ML/blob/main/Uneeq_Task3_Sentiment_Analysis.ipynb" target="_blank">View</a></p>
-        </div>
-        <div class="project-card">
-            <h3> Handwritten Digit Recognition Model using Deep Dearning </h3>
-            <p><a href="https://github.com/AdelSobhy/Uneeq-ML/blob/main/Uneeq_Task4_Handwritten_Digits_Recognition.ipynb" target="_blank">View</a></p>
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-vote-yea project-icon"></i>
+                        <h3>Minority-Aware Voting Algorithm</h3>
+                    </div>
+                    <p class="project-description">
+                        Developed a fair representation model that reduces bias by 90% using advanced 
+                        DAG-based modeling and Elo rating systems for proportional representation.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">Algorithm Design</span>
+                        <span class="tag">Fairness AI</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-user-minus project-icon"></i>
+                        <h3>Customer Churn Prediction</h3>
+                    </div>
+                    <p class="project-description">
+                        Built predictive models using advanced feature engineering techniques and 
+                        comprehensive model evaluation to identify at-risk customers.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Predictive Modeling</span>
+                        <span class="tag">Feature Engineering</span>
+                        <span class="tag">Business Analytics</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-leaf project-icon"></i>
+                        <h3>NASA CO₂ Emissions Dashboard</h3>
+                    </div>
+                    <p class="project-description">
+                        Created an interactive JavaScript dashboard visualizing CO₂ emission trends 
+                        with 87% accuracy using logistic regression models and NASA data.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Data Visualization</span>
+                        <span class="tag">Environmental Data</span>
+                        <span class="tag">Interactive Dashboards</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <footer id="contact">
-        <p>&copy; 2024 Adel Sobhy</p>
-    </footer>
-    <!-- Particle.js script for dynamic particles -->
-    <script src="particles.js"></script>
-    <script src="main.js"></script>
-</body>
 
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <h2 class="section-title">Education & Achievements</h2>
+            <div class="education-content">
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-details">
+                        <h3>B.Sc. in Computer Science</h3>
+                        <h4>MSA University, Giza</h4>
+                        <p class="education-meta">GPA: 3.82 | Expected Graduation: Jun 2027</p>
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="education-details">
+                        <h3>IGCSE</h3>
+                        <h4>Egyptian British International Schools</h4>
+                        <p class="education-meta">Score: 99.5% | Graduated: Jun 2023</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="achievements">
+                <h3>Awards & Recognition</h3>
+                <div class="achievement-grid">
+                    <div class="achievement-item">
+                        <i class="fas fa-trophy"></i>
+                        <span>Top 40% Solution in Kaggle House Prices Competition</span>
+                    </div>
+                    <div class="achievement-item">
+                        <i class="fas fa-medal"></i>
+                        <span>2nd Place – DeepMinds 2025 Scientific Day</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Let's Work Together</h2>
+            <div class="contact-content">
+                <p class="contact-intro">
+                    I'm always interested in new opportunities and collaborations. 
+                    Whether you have a project in mind or just want to connect, I'd love to hear from you.
+                </p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:adelsobhywork@gmail.com" class="contact-link">adelsobhywork@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+20 1118380356</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Adel Sobhy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile navigation toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navbar
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
 </html>
